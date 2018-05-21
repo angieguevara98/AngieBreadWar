@@ -4,17 +4,19 @@ public class User {
 	
 	int id;
 	String name;
-	int email;
+	int codigo;
 	String password;
 	int tipo;
+	String email;
 	
 	
-	public User(String name, int email, String password, int tipo) {
+	public User(String name, int codigo, String password, int tipo, String email) {
 		super();
 		this.name = name;
-		this.email = email;
+		this.codigo = codigo;
 		this.password = password;
 		this.tipo = tipo;
+		this.email = email;
 		
 	}
 
@@ -35,11 +37,11 @@ public class User {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getEmail() {
-		return email;
+	public int getCodigo() {
+		return codigo;
 	}
-	public void setEmail(int email) {
-		this.email = email;
+	public void setCodigo(int codigo) {
+		this.codigo = codigo;
 	}
 	public String getPassword() {
 		return password;
@@ -57,9 +59,17 @@ public class User {
 		
 	}
 	
+	public String getEmail() {
+		return email;
+	}
+	
+	public void setEmail(String email) {
+		this.email= email;
+	}
+	
 	public String toString() {
-		return "User [id=" + id + ", name=" + name + ", email=" + email + ", password="
-				+ password + " , tipo=" + tipo +"]";
+		return "User [id=" + id + ", name=" + name + ", codigo=" + codigo + ", password="
+				+ password + " , tipo=" + tipo +", email" + email +"]";
 	}
 
 

@@ -1,4 +1,4 @@
-package com.tecsup.gestion.exception;
+package com.angiebreadwar.app.exception;
 
 public class DAOException extends Exception {
 
